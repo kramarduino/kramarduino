@@ -1,0 +1,315 @@
+#slider { /*положение слайдера*/
+    position: relative;
+	text-align: center;
+    top: 10px;
+}
+
+#slider{ /*центровка слайдера*/
+	margin: 0 auto;
+}
+
+#slides article{ /*все изображения справа друг от доруга*/
+	width: 20%;
+	float: left;
+}
+
+#slides .image{ /*устанавливает общий размер блока с изображениями*/
+	width: 500%;
+	line-height: 0;
+}
+
+#overflow{ /*сркывает все, что находится за пределами этого блока*/
+	width: 100%;
+	overflow: hidden;
+}
+
+article img{ /*размер изображений слайдера*/
+	width: 100%;
+}
+
+#desktop:checked ~ #slider{ /*размер всего слайдера*/
+	max-width: 960px; /*максимальнная длинна*/
+}
+
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#switch1:checked ~ #controls label:nth-child(5), 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4){
+	background: url('prev.png') no-repeat; /*заливка фона картинкой без повторений*/
+	float: left;
+	margin: 0 0 0 -84px; /*сдвиг влево*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+/*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(1){
+	background: url('next.png') no-repeat; /*заливка фона картинкой без повторений*/
+	float: right;
+	margin: 0 -84px 0 0; /*сдвиг вправо*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
+	cursor: pointer;
+}
+
+.all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+	display: none;
+}
+
+/*позиция изображения при активации переключателя*/
+#switch1:checked ~ #slides .image{
+	margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image{
+	margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image{
+	margin-left: -200%;
+}
+
+#switch4:checked ~ #slides .image{
+	margin-left: -300%;
+}
+
+#switch5:checked ~ #slides .image{
+	margin-left: -400%;
+}
+
+#controls{ /*положение блока всех управляющих элементов*/
+	margin: -25% 0 0 0;
+	width: 100%;
+	height: 50px;
+}
+
+#active label{ /*стиль отдельного переключателя*/
+	border-radius: 10px; /*скругление углов*/
+	display: inline-block; /*расположение в строку*/
+	width: 15px;
+	height: 15px;
+	background: #bbb;
+}
+
+#active{ /*расположение блока с переключателями*/
+	margin: 23% 0 0;
+	text-align: center;
+}
+
+#active label:hover{ /*поведение чекбокса при наведении*/
+	background: #76c8ff;
+	border-color: #777 !important; /*выполнение в любом случае*/
+}
+
+/*цвет активного лейбла при активации чекбокса*/
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4),
+#switch5:checked ~ #active label:nth-child(5){
+	background: #18a3dd;
+	border-color: #18a3dd !important;
+}
+
+#slides .image{ /*анимация пролистывания изображений*/
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+#controls label:hover{ /*прозрачность стрелок при наведении*/
+	opacity: 0.6;
+}
+
+#controls label{ /*прозрачность стрелок при отводе курсора*/
+	transition: opacity 0.2s ease-out;
+}
+body {
+	font-family: Arial, San-Serif;
+	font-size: 100%;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+p {
+   font-style: 13px;
+   line-height: 1.3em;
+}
+.top{
+	margin: 0 auto;
+	width: 960px;
+}
+.container {
+	margin: 0 auto;
+	width: 960px;
+
+	/* Заголовок*/
+}	
+.header {
+	padding: 10px 0;
+	background-image: url('top.jpg');: 
+	
+}
+.header h1 {
+	color: yellow;
+	text-align: center;
+}	
+.header h2 {
+	color: #FFF;
+	text-align: right;
+}
+/*Навигация*/
+.navi {
+	margin-top: 10px;
+	background-color: blue;
+	border-color: #101010; 
+	min-height: 64px;
+}
+.navi li {
+	float: left;
+	width: 240px;
+}
+.navi a {
+	display: block;
+	color: #FFF;
+	line-height: 4em;
+	font-weight: bold;
+	text-align: center;
+}
+.navi li a:hover {
+	color: yellowgreen;
+	background-color: green; 
+}
+
+.login {
+	padding: 15px 0;
+	float: right;
+}
+.login input[type="text"],
+.login input[type="password"] {
+	padding: 5px;
+	margin-right: 5px;
+	border: 1px solid lightgrey;
+	border-radius: 5px; 
+	outline: none;
+}
+.login input[type="submit"] {
+	padding: 5px 15px;
+	border: 1px solid lightgrey;
+	border-radius: 5px; 
+	outline: none;
+}
+.login input[type="submit"]:hover,
+button:hover 
+{
+	background-color: darkgrey;
+	color: white;
+}
+/*Коллекции*/
+.collection {
+	overflow: auto;
+}
+
+.collection-title {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #777;
+	font-size: 36px; 
+}
+.collection-title small {
+	color: #777;
+	font-size: 70%;
+}
+.collection-item-outer {
+	display: inline-block;
+	float: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 33.3%;
+	box-sizing: border-box;  
+}
+.collection > div:first-child {
+	padding-left: 0;
+	padding-right: 5px; 
+}
+.collection > div:last-child {
+	padding-right: 0;
+	padding-left: 5px;
+}
+.collection-item {
+	border: 1px solid #959595;
+}
+.collection-item img {
+	width: 100%;
+	height: 200px;
+}
+.collection-item video {
+	width: 100%;
+}
+.collection-text {
+	padding: 0 20px 20px 20px;
+}
+.collection-text h4 {
+	color: blue;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis; 
+	text-align: center;
+}
+.collection-text p {
+height: 100px;
+overflow: hidden;
+text-align: justify;
+}
+.collection-text button {
+	padding: 10px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	outline: none;
+}
+/*TEXT*/
+.text {
+    margin: 0 auto;
+	width: 960px;
+}
+.text h3 {
+color: blue;
+text-align: center;	
+}
+.text h4 {
+color: yellowgreen;
+text-align: right;	
+}	
+.text p {
+   font-style: 13px;
+   line-height: 1.3em;
+   text-align: justify;
+}
+.text img {
+float:left; /* Выравнивание по левому краю */
+margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+}
+/*FOOTER*/
+.footer {
+	background-color: blue;
+	color: white;
+	padding: 20px 0;
+	margin-top: 30px;  
+}
