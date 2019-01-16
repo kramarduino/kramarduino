@@ -4,44 +4,25 @@
 	<title>Вивчаємо ARDUINO</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<link href="fotorama.css" rel="stylesheet">
+  <script src="fotorama.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+ <!-- Стили для демонстрации -->
+		<link rel="stylesheet" href="./demo/css/reset.css" />
+	        <link rel="stylesheet" type="text/css" href="css/buttons.css"> 
+		<!-- Стили jqPagination -->
+		<link rel="stylesheet" href="./css/jqpagination.css" />
+		
+		<!-- Скрипты -->
+		<script src="./js/jquery-1.6.2.min.js"></script>
+		<script src="./js/jquery.jqpagination.js"></script>
+		<script src="./js/scripts.js"></script>
+		
 </head>
 <body>
-	
-	<div class="all">
-		<input checked type="radio" name="respond" id="desktop">
-			<article id="slider">
-					<input checked type="radio" name="slider" id="switch1">
-					<input type="radio" name="slider" id="switch2">
-					<input type="radio" name="slider" id="switch3">
-					<input type="radio" name="slider" id="switch4">
-					<input type="radio" name="slider" id="switch5">
-				<div id="slides">
-					<div id="overflow">
-						<div class="image">
-							<article><img src="slaider/1.jpg"></article>
-							<article><img src="slaider/2.jpg"></article>
-							<article><img src="slaider/3.jpg"></article>
-							<article><img src="slaider/4.jpg"></article>
-							<article><img src="slaider/5.jpg"></article>
-						</div>
-					</div>
-				</div>
-				<div id="controls">
-					<label for="switch1"></label>
-					<label for="switch2"></label>
-					<label for="switch3"></label>
-					<label for="switch4"></label>
-					<label for="switch5"></label>
-				</div>
-				<div id="active">
-					<label for="switch1"></label>
-					<label for="switch2"></label>
-					<label for="switch3"></label>
-					<label for="switch4"></label>
-					<label for="switch5"></label>
-				</div>
-			</article>
-	</div>	
 	<header class="header">
 	<div class="top">
 	<h1>Основи автоматики та робототехніки з використанням контролерів ARDUINO</h1>
@@ -49,90 +30,122 @@
     </div>
 </header>	
 <!--Навигация-->
-<nav class="navi">
-	<div class="container">
-		<ul>
-			<li><a href="gurtok.html">Гурток "Робототехніка 8-9 кл"</a></li>
-			<li><a href="scratch.html">Scratch та ARDUINO</a></li>
-			<li><a href="flprog.html">FLProg та ARDUINO</a></li>
-			<li><a href="index.html">Вернісаж цікавих проектів</a></li>
-		</ul>
-        <!--FORM-->
-        <!--form action="#" class="login">
-        	<input type="text" placeholder="Login" required> 
-        	<input type="password" placeholder="password" required>
-        	<input type="submit" value="Sing In"-->
-        <!--/form-->
-        <!--/FORM-->
-	</div>
-</nav>
+<div class="slaider">
+<div class="fotorama" data-nav="thumbs" data-autoplay="4000" data-width="600" data-ratio="600/333" data-max-width="100%">
+  <img src="slaider/1.jpg">
+  <img src="slaider/2.jpg">
+  <img src="slaider/3.jpg">
+  <img src="slaider/4.jpg">
+  <img src="slaider/5.jpg">
+</div>
+</div>	
+<!--Навигация-->
+	<div class="top">
+	<ul class="menu">
+  	<li><a href="index.html"><b>Що таке ARDUINO?</b></a></li>
+  	<li><a href="scratch.html"><b>Scratch та ARDUINO</b></a></li>
+  	<li><a href="flprog.html"><b>FLProg та ARDUINO</b></a></li>
+  	<li><a href="gurtok.html"><b>Гурток "Робототехніка"</b></a></li>
+  	<li><a href="sport_robot.html"><b>Спортивна робототехніка</b></a></li>
+</ul>
+</div>
 <!--/Навигация-->
 <!--ТЕКСТ-->
-<div class="text">
-<h3>Гурток "Робототехніка 8-9 клас"</h3>
-<a href="https://2.bp.blogspot.com/-ykjMZjcwnF8/W9Ddg22BDUI/AAAAAAAABEE/1viiTk3S1JgI7TUyHw-_teUASG5xn3OLQCLcBGAs/s1600/arduino_3.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="843" data-original-width="1000" height="532" src="https://2.bp.blogspot.com/-ykjMZjcwnF8/W9Ddg22BDUI/AAAAAAAABEE/1viiTk3S1JgI7TUyHw-_teUASG5xn3OLQCLcBGAs/s640/arduino_3.jpg" width="640" /></a>
+<main>
 
-<table border="1" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="border-collapse: collapse; border: none; mso-border-alt: solid windowtext .5pt; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-yfti-tbllook: 1184;">
- <tbody>
-<tr style="mso-yfti-firstrow: yes; mso-yfti-irow: 0;">
-  <td style="border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 388.15pt;" valign="top" width="518"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm;">
-<span style="mso-bidi-font-weight: normal;"><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14pt;">Презентація «</span></span><span style="mso-bidi-font-weight: normal;"><span lang="EN-US" style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">ARDUINO</span></span><span style="mso-bidi-font-weight: normal;"><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">»<o:p></o:p></span></span></div>
-</td>
-  <td style="border-left: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 145.95pt;" valign="top" width="195"><div align="center" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: center;">
-<a href="https://drive.google.com/file/d/1-HAOAON4a4ZxyBdSP6FzIbJynOhY1QJK/view?usp=sharing" target="_blank"><span style="mso-bidi-font-weight: normal;"><span lang="EN-GB" style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">&lt;&lt;&lt;</span></span><span style="mso-bidi-font-weight: normal;"><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">Завантажити</span></span></a><span style="mso-bidi-font-weight: normal;"><span lang="EN-GB" style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;"><a href="https://drive.google.com/file/d/1-HAOAON4a4ZxyBdSP6FzIbJynOhY1QJK/view?usp=sharing" target="_blank">&gt;&gt;&gt;</a><o:p></o:p></span></span></div>
-</td>
- </tr>
-<tr style="mso-yfti-irow: 1;">
-  <td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 388.15pt;" valign="top" width="518"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: justify;">
-<span style="mso-bidi-font-weight: normal;"><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">Програма
-  гуртка «Робототехніка»<o:p></o:p></span></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 145.95pt;" valign="top" width="195"><div align="center" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: center;">
-<a href="https://drive.google.com/file/d/1iP4jhkPSJrBWFYaGRoY7bsBQKZnH59L6/view?usp=sharing" target="_blank"><span style="mso-bidi-font-weight: normal;"><span lang="EN-GB" style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">&lt;&lt;&lt;</span></span><span style="mso-bidi-font-weight: normal;"><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">Завантажити</span></span><span style="mso-bidi-font-weight: normal;"><span lang="EN-GB" style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">&gt;&gt;&gt;</span></span></a><span style="mso-bidi-font-weight: normal;"><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;"><o:p></o:p></span></span></div>
-</td>
- </tr>
-<tr style="mso-yfti-irow: 2;">
-  <td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 388.15pt;" valign="top" width="518"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: justify;">
-<span style="mso-bidi-font-weight: normal;"><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">Програми шкіл «ОРТ»<o:p></o:p></span></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 145.95pt;" valign="top" width="195"><div align="center" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: center;">
-<a href="https://drive.google.com/drive/folders/1oB9OZt6P_QrAE0w7-hcC9Jols0_ouaJ_?usp=sharing" target="_blank"><span style="mso-bidi-font-weight: normal;"><span lang="EN-GB" style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">&lt;&lt;&lt;</span></span><span style="mso-bidi-font-weight: normal;"><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">Завантажити</span></span><span style="mso-bidi-font-weight: normal;"><span lang="EN-GB" style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">&gt;&gt;&gt;</span></span></a><span style="mso-bidi-font-weight: normal;"><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;"><o:p></o:p></span></span></div>
-</td>
- </tr>
-<tr style="mso-yfti-irow: 3;">
-  <td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 388.15pt;" valign="top" width="518"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: justify;">
-<span style="mso-bidi-font-weight: normal;"><span lang="RU" style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">Руководство по освоению </span></span><span style="mso-bidi-font-weight: normal;"><span lang="EN-US" style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">ARDUINO<o:p></o:p></span></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 145.95pt;" valign="top" width="195"><div align="center" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: center;">
-<a href="https://drive.google.com/file/d/1y0nmws3LvZYJKM--3i4S6Oj8bQvZK87w/view?usp=sharing" target="_blank"><span style="mso-bidi-font-weight: normal;"><span lang="EN-GB" style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">&lt;&lt;&lt;</span></span><span style="mso-bidi-font-weight: normal;"><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">Завантажити</span></span><span style="mso-bidi-font-weight: normal;"><span lang="EN-GB" style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">&gt;&gt;&gt;</span></span></a><span style="mso-bidi-font-weight: normal;"><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;"><o:p></o:p></span></span></div>
-</td>
- </tr>
-<tr style="mso-yfti-irow: 4;">
-  <td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 388.15pt;" valign="top" width="518"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: justify;">
-<span style="mso-bidi-font-weight: normal;"><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">Інсталятор програми
-  </span></span><span style="mso-bidi-font-weight: normal;"><span lang="EN-US" style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">FLProg 2.5.1<o:p></o:p></span></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 145.95pt;" valign="top" width="195"><div align="center" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: center;">
-<a href="https://drive.google.com/file/d/1-BgqzK20V7e0mCOdc4AzVzSfF2F2nb9e/view?usp=sharing" target="_blank"><span style="mso-bidi-font-weight: normal;"><span lang="EN-GB" style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">&lt;&lt;&lt;</span></span><span style="mso-bidi-font-weight: normal;"><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">Завантажити</span></span><span style="mso-bidi-font-weight: normal;"><span lang="EN-GB" style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">&gt;&gt;&gt;</span></span></a><span style="mso-bidi-font-weight: normal;"><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;"><o:p></o:p></span></span></div>
-</td>
- </tr>
-<tr style="mso-yfti-irow: 5; mso-yfti-lastrow: yes;">
-  <td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 388.15pt;" valign="top" width="518"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: justify;">
-<span style="mso-bidi-font-weight: normal;"><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">Приклади
-  початкових проектів <o:p></o:p></span></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 145.95pt;" valign="top" width="195"><div align="center" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: center;">
-<a href="https://drive.google.com/drive/folders/1se2ySXh5pgglA0jmVut73N5XiDAq6GpG?usp=sharing" target="_blank"><span style="mso-bidi-font-weight: normal;"><span lang="EN-GB" style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">&lt;&lt;&lt;</span></span><span style="mso-bidi-font-weight: normal;"><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;">Завантажити</span></span><span style="mso-bidi-font-weight: normal;"><span lang="EN-GB" style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14pt;">&gt;&gt;&gt;</span></span></a><b style="mso-bidi-font-weight: normal;"><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 14.0pt;"><o:p></o:p></span></b></div>
-</td>
- </tr>
-</tbody></table>
-</div>
+	<div class="top">
+		<h2>Гурток "Робототехніка 8-9 кл"</h2>
+		<div class="collection1">
+			<div class="collection1-item-outer">
+				<div class="collection1-item">
+					<a class="ulightbox" href="images/gurtok.jpg" title="описание к фото"><img alt="альтернативное описание картинки" src="images/gurtok.jpg" title="Натисніть для перегляду..."></a>
+					<div class="collection1-text">
+						<h4>Програма гуртка "Робототехніка 8-9 кл"</h4>
+<p>	Даний  курс  має  виразні  інтегративні  функції,  має  здатність справляти  різнобічний  навчальний,  розвивальний  і  виховний  вплив  на  учнів, сприяти формуванню особистості, здатної правильно обрати свій шлях у житті, зважаючи  на  власні  можливості  і  рівень  компетентності...
+</p>
+<button> <a href="https://drive.google.com/file/d/1iP4jhkPSJrBWFYaGRoY7bsBQKZnH59L6/view?usp=sharing" target="_blank" class="c">Детальніше...</a></button>
+					</div>
+				</div>
+			</div>
+			
+				</div>
+			</div>		
+<div class="top">
+		<div class="collection1">
+			<div class="collection1-item-outer">
+				<div class="collection1-item">
+					<a class="ulightbox" href="images/led_disp.jpg" title="описание к фото"><img alt="альтернативное описание картинки" src="images/led_disp.jpg" title="Натисніть для перегляду..."></a>
+					<div class="collection1-text">
+						<h4>Підключення LED-дісплея</h4>
+
+<p>	Ви навчитеся підключати LED-дісплей до Arduino та виводити різну інформацію на дісплей.
+</p>
+<a href="https://drive.google.com/file/d/1se06Ze4VQdvwIrG9bTWtVakwi-mS2zPw/view?usp=sharing" target="_blank"><input type="button" class="floated" id="slide_start_button" value="Реалізація на Arduino"></a>
+<a href="https://drive.google.com/file/d/1A8nKGYepjngTiMt-jIoevZCGjilp4gsy/view?usp=sharing" target="_blank"><input type="button" class="floated" id="slide_stop_button" value="Реалізація на FLProg"> </a>
+					</div>
+					</div>
+				</div>
+			</div>
+				</div>		
+<div class="top">
+		<div class="collection1">
+			<div class="collection1-item-outer">
+				<div class="collection1-item">
+					<a class="ulightbox" href="images/matrix.jpg" title="описание к фото"><img alt="альтернативное описание картинки" src="images/matrix.jpg" title="Натисніть для перегляду..."></a>
+					<div class="collection1-text">
+						<h4>Підключення світлодіодної матриці на базі MAX7219</h4>
+<p>	Ви навчитеся підключати світлодіодну матрицю на базі MAX7219 до Arduino та виводити різну інформацію за допомогою неї.
+</p>
+						<button> <a href="https://drive.google.com/file/d/10MuxPkg2b3YZIBYVLrJnIio1NGDzhB3j/view?usp=sharing" target="_blank" class="c">Детальніше...</a></button>
+					</div>
+				</div>
+			</div>
+			
+				</div>
+			</div>		
+<div class="top">
+		<div class="collection1">
+			<div class="collection1-item-outer">
+				<div class="collection1-item">
+					<a class="ulightbox" href="images/l298n.jpg" title="описание к фото"><img alt="альтернативное описание картинки" src="images/l298n.jpg" title="Натисніть для перегляду..."></a>
+					<div class="collection1-text">
+						<h4>Модуль драйвера двигуна L298N та Arduino</h4>
+<p>	Ви навчитеся підключати модуль драйвера двигуна L298N до Arduino та керувати роботою одного або двох ел. двигунів.
+</p>
+						<button> <a href="https://drive.google.com/file/d/1vRyqgS_lL07UPYIO2HldtwV81_4trf1V/view?usp=sharing target="_blank" class="c">Детальніше...</a></button>
+					</div>
+				</div>
+				</div>
+				</div>
+				</div>
+           <div class="top">
+            <div class="str">
+			<div align=center>
+			<div id="wrapper">
+			<p>&nbsp;</p>
+			<div align=center><div class="gigantic pagination">
+			    <a href="#" class="first" data-action="first">&laquo;</a>
+			    <a href="#" class="previous" data-action="previous">&lsaquo;</a>
+			    <input type="text" readonly="readonly" />
+			    <a href="#" class="next" data-action="next">&rsaquo;</a>
+			    <a href="#" class="last" data-action="last">&raquo;</a>
+			</div>
+			</div>
+			 </div>   
+		</div>
+		</div>		
+</main>
+<!--<div class="knopka">
+	<button> <a href="#" class="kn">1</a></button>
+	<button> <a href="#" class="kn">2</a></button>
+	</div>-->
 <!--/ТЕКСТ-->
 <!--Дно-->
+<br><br><br><br>
 <footer class="footer">
-	<div class="container">
-<p>Краматорськ, 2018 рік</p>
-</div>
+	<div class="top">
+		<p>Краматорськ, 2018 рік</p>
+	</div>
 </footer>
 <!--/Дно-->	
 </body>

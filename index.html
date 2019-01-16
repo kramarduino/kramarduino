@@ -4,44 +4,25 @@
 	<title>Вивчаємо ARDUINO</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<link href="fotorama.css" rel="stylesheet">
+  <script src="fotorama.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+ <!-- Стили для демонстрации -->
+		<link rel="stylesheet" href="./demo/css/reset.css" />
+	        <link rel="stylesheet" type="text/css" href="css/buttons.css"> 
+		<!-- Стили jqPagination -->
+		<link rel="stylesheet" href="./css/jqpagination.css" />
+		
+		<!-- Скрипты -->
+		<script src="./js/jquery-1.6.2.min.js"></script>
+		<script src="./js/jquery.jqpagination.js"></script>
+		<script src="./js/scripts.js"></script>
+		
 </head>
 <body>
-	
-	<div class="all">
-		<input checked type="radio" name="respond" id="desktop">
-			<article id="slider">
-					<input checked type="radio" name="slider" id="switch1">
-					<input type="radio" name="slider" id="switch2">
-					<input type="radio" name="slider" id="switch3">
-					<input type="radio" name="slider" id="switch4">
-					<input type="radio" name="slider" id="switch5">
-				<div id="slides">
-					<div id="overflow">
-						<div class="image">
-							<article><img src="slaider/1.jpg"></article>
-							<article><img src="slaider/2.jpg"></article>
-							<article><img src="slaider/3.jpg"></article>
-							<article><img src="slaider/4.jpg"></article>
-							<article><img src="slaider/5.jpg"></article>
-						</div>
-					</div>
-				</div>
-				<div id="controls">
-					<label for="switch1"></label>
-					<label for="switch2"></label>
-					<label for="switch3"></label>
-					<label for="switch4"></label>
-					<label for="switch5"></label>
-				</div>
-				<div id="active">
-					<label for="switch1"></label>
-					<label for="switch2"></label>
-					<label for="switch3"></label>
-					<label for="switch4"></label>
-					<label for="switch5"></label>
-				</div>
-			</article>
-	</div>	
 	<header class="header">
 	<div class="top">
 	<h1>Основи автоматики та робототехніки з використанням контролерів ARDUINO</h1>
@@ -49,111 +30,61 @@
     </div>
 </header>	
 <!--Навигация-->
-<nav class="navi">
-	<div class="container">
-		<ul>
-			<li><a href="gurtok.html">Гурток "Робототехніка 8-9 кл"</a></li>
-			<li><a href="scratch.html">Scratch та ARDUINO</a></li>
-			<li><a href="flprog.html">FLProg та ARDUINO</a></li>
-			<li><a href="index.html">Вернісаж цікавих проектів</a></li>
-		</ul>
-        <!--FORM-->
-        <!--form action="#" class="login">
-        	<input type="text" placeholder="Login" required> 
-        	<input type="password" placeholder="password" required>
-        	<input type="submit" value="Sing In"-->
-        <!--/form-->
-        <!--/FORM-->
-	</div>
-</nav>
+<div class="slaider">
+<div class="fotorama" data-nav="thumbs" data-autoplay="4000" data-width="600" data-ratio="600/333" data-max-width="100%">
+  <img src="slaider/1.jpg">
+  <img src="slaider/2.jpg">
+  <img src="slaider/3.jpg">
+  <img src="slaider/4.jpg">
+  <img src="slaider/5.jpg">
+</div>
+</div>	
+<!--Навигация-->
+	<div class="top">
+	<ul class="menu">
+  	<li><a href="index.html"><b>Що таке ARDUINO?</b></a></li>
+  	<li><a href="scratch.html"><b>Scratch та ARDUINO</b></a></li>
+  	<li><a href="flprog.html"><b>FLProg та ARDUINO</b></a></li>
+  	<li><a href="gurtok.html"><b>Гурток "Робототехніка"</b></a></li>
+  	<li><a href="sport_robot.html"><b>Спортивна робототехніка</b></a></li>
+</ul>
+</div>
 <!--/Навигация-->
-<!--Меню-->
-<main>
-	<div class="container">
-		<h2 class="collection-title">Фото колекція <small> кращі роботи</small></h2>
-		<div class="collection">
-			<div class="collection-item-outer">
-				<div class="collection-item">
-					<a class="ulightbox" href="images/pr1.jpg" title="описание к фото"><img alt="альтернативное описание картинки" src="images/pr1.jpg" title="Натисніть для перегляду..."></a>
-					<div class="collection-text">
-						<h4>Блимаючий світлодіод на Arduino</h4>
-<p>	Ви навчитеся підключати світлодіод до Arduino і керувати його частотю включення. Це найпростіша і базова модель.
-</p>
-						<button>Детальніше...</button>
-					</div>
-				</div>
-			</div>
-			<div class="collection-item-outer">
-				<div class="collection-item">
-					<a class="ulightbox" href="images/pr2.jpg" title="описание к фото"><img alt="альтернативное описание картинки" src="images/pr2.jpg" title="Натисніть для перегляду..."></a>
-					<div class="collection-text">
-						<h4>Підключення пьезоелемента</h4>
-<p>	На цьому уроці ви навчитеся підключати п'єзоелемент до Arduino. У нашій моделі частоту звуку можна регулювати, задаючи відповідні параметри в програмі.
-</p>
-						<button>Детальніше...</button>
-					</div>
-				</div>
-			</div>
-			<div class="collection-item-outer">
-				<div class="collection-item">
-					<a class="ulightbox" href="images/pr3.jpg" title="описание к фото"><img alt="альтернативное описание картинки" src="images/pr3.jpg" title="Натисніть для перегляду..."></a>
-					<div class="collection-text">
-						<h4>Триколірний світлодіод</h4>
-<p>На цьому уроці ви навчитеся підключати триколірний світлодіод до Arduino.Триколірний світлодіод (rgb led) - це три світлодіода різних кольорів в одному корпусі.</p>
-						<button>Детальніше...</button>
-					</div>
-				</div>
-			</div>
-</main>	
-<main>		
-		<div class="container">		
-		<h2 class="collection-title">
-			<left> Відео колекція <small>кращі роботи</small></left></h2>
-		<div class="collection">
-			<div class="collection-item-outer">
-				<div class="collection-item">
-					<video controls>
-						<source src="video/movie.mp4" type="video/mp4">
-						
-					</video>
-					<div class="collection-text">
-						<h4>Назва видео</h4>
-						<p>В розробці</p>
-						<button>Детальніше...</button>
-					</div>
-				</div>
-			</div>
-			<div class="collection-item-outer">
-				<div class="collection-item">
-					<video controls>
-						<source src="video/movie.mp4" type="video/mp4">	
-					</video>
-					<div class="collection-text">
-						<h4>Назва видео</h4>
-						<p>В розробці</p>
-						<button>Детальніше...</button>
-					</div>
-				</div>
-			</div>
-			<div class="collection-item-outer">
-				<div class="collection-item">
-					<video controls>
-						<source src="video/movie.mp4" type="video/mp4">
-					</video>
-					<div class="collection-text">
-						<h4>Назва видео</h4>
-						<p>В розробці</p>
-						<button>Детальніше...</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>	
-</main>
-<!--/Меню-->
+<!--ТЕКСТ-->
+<div class="text1">
+<h3>Що таке ARDUINO?</h3>
+<img src="images/arduino-uno-r3.jpg" alt="ARDUINO UNO" width="538" height="354">
+<p> <b>Arduino (Ардуіно)</b> — апаратна обчислювальна платформа для аматорського конструювання, основними компонентами якої є плата мікроконтролера з елементами вводу/виводу та середовище розробки Processing/Wiring на мові програмування, що є підмножиною C/C++. Людськими словами — це дешева плата яка є у вільному доступі, яка сумісна і з Windows і з Mac та навіть з Linux, до якої можна підключити багато чого, від вирваної кнопки із старої мишки до LED екрану. І все це легко програмується навіть новачком. </p>
+<p> Суть створення Arduino-проектів проста, ви берете одну плату з великої лінійки, підключаєте до її контактів датчик чи якийсь модуль, і пишете, коли на ці контакти потрібно подавати струм чи наоборот перевіряти наявність струму на них. Ось простий приклад. До одного контакту ви підключили датчик світла, а до другого реле з лампою і пишете команди щоб програма перевіряла сигнал з сенсора і за умови його відсутності вмикала реле. Ставим цю систему на подвір’ї, і ось, коли вечоріє у нас вмикаються ліхтарі. І це лише найпростіший приклад, після невеликої практики Ви навчитеся створювати системи, які будуть вмикати освітлення в домі по хлопку або командою “Ok, Google”, які будуть перевіряти чи підлиті квіти та в потрібний момент — підливати їх. Ці плати також вміють керувати двигунами, а отже можна створювати автономні машинки, роботів, балансуючих на двох колесах, приводи для електроштор та 3D принтери. Для початку роботи потрібно розжитися одною з плат, вона може бути як оригінальною, так і аналогом, так і китайською копією або ж взагалі власноруч спаяною. Також потрібне буде програмне забезпечення, воно є на офіційному сайті у вільному доступі і з усіма вище перерахованими платами справно працює. Модулями та сенсорами ви розживетесь з часом, їх можна буде як купити, так і зібрати.</p>
+<h3>Крок перший</h3>
+<p>Визначитися з найбільш підходящою для ваших проектів платою. Благо їхній вибір є досить великим, набагато більшим ніж на зображенні. Для проектів носимих компактних гаджетів є Mini, Nano та Micro. Для чогось більшого ідеально підходить Mega. Особисто я рекомендую для початку брати UNO або трішки докласти та взяти MEGA, сміло можете брати копії, а не оригінали.</p>
+<img src="images/Arduino full.jpg" alt="Перелік плат" width="960" height="300">
+<h3>Крок другий</h3>
+<p>Потрібно встановити програмне забезпечення Arduino IDE. Воно є на офіційному сайті, натисніть у списку на вашу операційну систему. <a href="https://www.arduino.cc/en/main/software" target="_blank"><b>ЗАВАНТАЖИТИ З ОФІЦІЙНОГО САЙТУ</b></a></p>
+<img src="images/Arduino 1.8.8.jpg" alt="Інтерфейс програми Ардуіно" width="960" height="460">
+<h3>Крок третій</h3>
+<p>Налаштовуємо це програмне забезпечення (Arduino IDE). Підключаємо нашу плату до свого ПК або Mac. Відкриваємо Arduino IDE. У вкладці “Tools” наводимо курсор на “Board:” та натискаємо на плату, яку ви маєте (назва тієї плати, яку щойно підключили).</p>
+<img src="images/Arduino 3_1.jpg" alt="Вибір плати Ардуіно" width="960" height="460">
+<p>Потім у тій же вкладці “Tools” наводимо на “Port:” та вибираємо той порт, до якого підключено Arduino. Скоріш за все програма це зробить за вас.</p>
+<img src="images/Arduino 3_2.jpg" alt="Вибір плати Ардуіно" width="960" height="460">
+<p>Ось і все, можна розпочинати створення своїх проектів..</p>
+<div class="knopka">
+	<button> <a href="test.html" class="kn">На початок</a></button>
+	</div>
+</div>
+<!--/ТЕКСТ-->
+<div class="top">
+	<ul class="menu">
+  	<li><a href="test.html"><b>Що таке ARDUINO?</b></a></li>
+  	<li><a href="scratch.html"><b>Scratch та ARDUINO</b></a></li>
+  	<li><a href="flprog.html"><b>FLProg та ARDUINO</b></a></li>
+  	<li><a href="gurtok.html"><b>Гурток "Робототехніка"</b></a></li>
+  	<li><a href="sport_robot.html"><b>Спортивна робототехніка</b></a></li>
+</ul>
+</div>
 <!--Дно-->
 <footer class="footer">
-	<div class="container">
+	<div class="top">
 		<p>Краматорськ, 2018 рік</p>
 	</div>
 </footer>
